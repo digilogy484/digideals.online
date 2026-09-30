@@ -1,0 +1,15 @@
+{
+  "deal_DD08794": {
+    "id": "DD08794",
+    "price": 3200000,
+    "deposit": 160000,
+    "status": "paid",
+    "bank": "SAMA 7392 Verified - Al Rajhi ****6789",
+    "codes": {
+      "reg": "REG-DD08794-7392",
+      "data": "DATA-380M-NRJ-NORTH",
+      "sign": "SIGN-20260513-RIYADH"
+    },
+    "celebration": "fingerprint-real-gold.png"
+  }
+}
