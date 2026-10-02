@@ -8,13 +8,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Deploy via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
-          local_path: ./
-          remote_path: ./
-          sftp_only: true
-          sftpArgs: '-o ConnectTimeout=30'
+          protocol: sftp
+          local-dir: ./
+          server-dir: ./
+          dangerous-clean-slate: false
