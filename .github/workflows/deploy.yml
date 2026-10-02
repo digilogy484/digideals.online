@@ -17,4 +17,3 @@ jobs:
           source: "./"
           target: "./"
           rm: false
-          strip_components: 1
