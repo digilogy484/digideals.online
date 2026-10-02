@@ -14,7 +14,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
-          source: "."
+          source: "./"
           target: "./"
           rm: false
           strip_components: 1
