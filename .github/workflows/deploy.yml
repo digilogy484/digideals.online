@@ -8,12 +8,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Deploy via SFTP
-        uses: appleboy/scp-action@v0.1.7
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
         with:
-          host: ${{ secrets.FTP_SERVER }}
+          server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
-          source: "./"
-          target: "./"
-          rm: false
+          local_path: ./
+          remote_path: ./
+          sftp_only: true
+          sftpArgs: '-o ConnectTimeout=30'
